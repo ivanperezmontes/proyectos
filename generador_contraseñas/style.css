@@ -1,0 +1,15 @@
+html{
+    background-color: rgb(27, 0, 0);
+    color: white;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.generador{
+    align-items: center;
+}

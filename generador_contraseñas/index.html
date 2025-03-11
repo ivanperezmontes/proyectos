@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Generador de contraseñas</h1>
+
+        <!--Campo de la contraseña-->
+
+        
+    </div>
+    <header>
+      <h1>Generador de contraseñas</h1>
+    </header>
+    <main>
+      <section class="formulario">
+        <form action="POST">
+          <input
+            type="number"
+            name="caracteres"
+            placeholder="Numero de caracteres"
+            autofocus
+          />
+          <input type="checkbox" class="check" name="mayusculas" />Mayúsculas
+          <input type="checkbox" class="check" name="minusculas" />Minúsculas
+          <input type="checkbox" class="check" name="numeros" />Números
+          <input type="checkbox" class="check" name="simbolos" />Símbolos
+        </form>
+      </section>
+      <button class="generador" name="generador">Generar contraseña</button>
+      <p>
+        Aqui la tienes:
+        <button>Copiar</button>
+      </p>
+    </main>
+    <footer></footer>
+  </body>
+</html>
