@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura */
+    overflow: hidden; /* Evita el scroll */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asegura que el body ocupe el 100% de la altura */
+  }
+  
+  /* Contenedor general */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Promoción superior */
+  .promo {
+    text-align: center;
+    padding: 20px;
+    height: 10vh; /* Asigna un 10% de la altura a la promoción */
+  }
+  
+  .promo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Contenedor de navegación con Grid */
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* 3 columnas: menú, logo, búsqueda */
+    align-items: center;
+    height: 15vh; /* 15% de la altura de la ventana */
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  /* Menú alineado a la izquierda */
+  .menu-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .menu-container ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-container li {
+    padding: 20px;
+  }
+  
+  .menu-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Logo centrado */
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 100%;
+    max-height: 89px;
+    object-fit: contain;
+  }
+  
+  /* Barra de búsqueda alineada a la derecha */
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-container input {
+    font-size: 14px;
+  }
+  
+  /* Sección "about" para texto e imagen */
+  .about {
+    display: flex;
+    flex-direction: row; /* Por defecto, se coloca en fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Asegura que el texto y la imagen estén separados */
+    height: 60vh; /* Ajusta el tamaño de la sección "about" */
+    padding: 20px;
+  }
+  
+  .about img {
+    max-width: 45%; /* Limita el ancho de la imagen al 45% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se recorte ni se distorsione */
+  }
+  
+  .texto {
+    max-width: 45%; /* Limita el ancho del texto */
+    padding: 0 20px; /* Espacio alrededor del texto */
+    height: 100%; /* Asegura que el texto ocupe toda la altura disponible */
+    box-sizing: border-box;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    height: 5vh; /* Footer ocupa un 5% de la altura de la ventana */
+  }
+  
